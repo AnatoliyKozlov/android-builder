@@ -14,3 +14,7 @@ RUN mkdir -p ${ANDROID_HOME} && cd ${ANDROID_HOME} && \
     wget -q https://dl.google.com/android/repository/sdk-tools-linux-${ANDROID_SDK_VERSION}.zip && \
     unzip *tools*linux*.zip && \
     rm *tools*linux*.zip
+
+# Accept the license agreements of the SDK components
+ADD license_accepter.sh /opt/
+RUN chmod +x /opt/license_accepter.sh && /opt/license_accepter.sh $ANDROID_HOME
