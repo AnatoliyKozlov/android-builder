@@ -4,6 +4,8 @@ LABEL version="1.0" \
       maintainer="toliyansky@gmail.com" \
       description="Image for building android applications"
 
+RUN apt update && apt install -y wget
+
 # Download and install Android SDK
 # https://developer.android.com/studio/#downloads
 ARG ANDROID_SDK_VERSION=4333796
