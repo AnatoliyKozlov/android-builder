@@ -4,7 +4,7 @@ LABEL version="1.0" \
       maintainer="toliyansky@gmail.com" \
       description="Image for building android applications"
 
-RUN apt update && apt install -y wget
+RUN apt update && apt install -y wget unzip
 
 # Download and install Android SDK
 # https://developer.android.com/studio/#downloads
