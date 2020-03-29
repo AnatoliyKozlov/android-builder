@@ -1,3 +1,6 @@
-#### Ansible deployer
+#### Android builder
 
-This is the simplest image that based on ubuntu for using ansbile.
+This is a docker image for build android applications.
+
+Some parts code copying from
+https://github.com/thyrlian/AndroidSDK/blob/master/android-sdk/Dockerfile
